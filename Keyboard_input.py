@@ -1,5 +1,4 @@
-print("Hello world")
-print("Hello Jake")
+
 n= int(input('How many kids do you have? enter your response here-----> '))
 print('you have ' + str(n) + ' kids')
 x = str(input('is that the correct amount? (type "yes" or "no")----> '))
