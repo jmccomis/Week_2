@@ -49,3 +49,8 @@ printWeather(OntarioWeather)
 # Add data for Ontario and try to print again
 OntarioWeather.defineWeatherData('14', 'partly cloudy', '6 km/h W')
 printWeather(OntarioWeather)
+
+# Modify Toronto weather data
+TorontoWeather.defineWeatherData('15', 'sunny', '2 km/h SW')
+printWeather(TorontoWeather)
+
