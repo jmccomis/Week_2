@@ -1,17 +1,25 @@
+# CurrentWeather class definition
 class CurrentWeather:
+        # weather_data is shared among all CurrentWeather class instances
         weather_data={'Toronto': ['13','partly sunny','8 km/h NW'],'Montreal':['16','mostly sunny','22 km/h W']}
+
+        # Called when instantiating a CurrentWeather class (e.g. TorontoWeather = CurrentWeather('Toronto'))
         def __init__(self, city) : 
                 self.city = city
+                
         def getTemperature(self) :
                 return self.weather_data [self.city][0]
         def getWeatherConditions(self) :
                 return self.weather_data [self.city][1]
         def getWindSpeed(self) :
                 return self.weather_data [self.city][2]
+
+        # Create or modify the weather_data entry for this CurrentWeather's city
         def defineWeatherData(self, temperature, conditions, windSpeed):
                 self.weather_data [self.city] = [temperature, conditions, windSpeed]
                 return
 
+# Print weather data
 def printWeather(weatherData):
         try:
                 print('City: ' + weatherData.city)
